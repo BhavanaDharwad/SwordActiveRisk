@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-03-08T18:52:42Z" name="Default suite" finished-at="2018-03-08T18:53:16Z" duration-ms="34007">
+    <groups>
+    </groups>
+    <test started-at="2018-03-08T18:52:42Z" name="Default test" finished-at="2018-03-08T18:53:16Z" duration-ms="34007">
+      <class name="com.ActiveRisk.searchTestCase.searchTestCase">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:52:42Z" name="openBrowser" finished-at="2018-03-08T18:52:54Z" duration-ms="12405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="initializeLeverageSearch()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:52:54Z" name="initializeLeverageSearch" finished-at="2018-03-08T18:53:06Z" duration-ms="11744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeLeverageSearch -->
+        <test-method signature="initializeCompatibilitySearch()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:53:06Z" name="initializeCompatibilitySearch" finished-at="2018-03-08T18:53:13Z" duration-ms="7332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeCompatibilitySearch -->
+        <test-method signature="leverageSearchResult()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:53:13Z" name="leverageSearchResult" finished-at="2018-03-08T18:53:13Z" depends-on-methods="com.ActiveRisk.searchTestCase.searchTestCase.initializeLeverageSearch" duration-ms="46" status="FAIL">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<Compatibility...> but was:<Leverage...>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<Compatibility...> but was:<Leverage...>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at com.ActiveRisk.searchTestCase.searchTestCase.leverageSearchResult(searchTestCase.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- leverageSearchResult -->
+        <test-method signature="CompatibilitySearchResult()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:53:13Z" name="CompatibilitySearchResult" finished-at="2018-03-08T18:53:13Z" depends-on-methods="com.ActiveRisk.searchTestCase.searchTestCase.initializeCompatibilitySearch" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompatibilitySearchResult -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ActiveRisk.searchTestCase.searchTestCase@68e5eea7]" started-at="2018-03-08T18:53:13Z" name="closeBrowser" finished-at="2018-03-08T18:53:16Z" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ActiveRisk.searchTestCase.searchTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
